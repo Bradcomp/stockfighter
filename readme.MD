@@ -34,8 +34,8 @@ See <a href="https://starfighter.readme.io/v1.0/docs">Stockfighter API Docs</a> 
 #### orderStock(direction, account, venue, orderType, stock, price, qty) 
 Order stock is so you can programatically determine the direction.
 #### checkOrder(venue, stock, id)
-#### checkAllOrders(venue, account)
-#### checkStockOrders(venue, account, stock)
+#### checkAllOrders(account, venue)
+#### checkStockOrders(account, venue, stock)
 #### cancelOrder(venue, stock, id)
 
 ## WEB SOCKET METHODS

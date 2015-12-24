@@ -31,13 +31,13 @@ const cancelOrder = curry((venue, stock, id) =>
         .then(checkErrors)
 );
 
-const checkAllOrders = curry((venue, account) => 
+const checkAllOrders = curry((account, venue) => 
     request
         .get(`${URL}/venues/${venue}/accounts/${account}/orders`, headers)
         .then(checkErrors)
 );
 
-const checkStockOrders = curry((venue, account, stock) => 
+const checkStockOrders = curry((account, venue, stock) => 
     request
         .get(`${URL}/venues/${venue}/accounts/${account}/stocks/${stock}/orders`, headers)
         .then(checkErrors)
