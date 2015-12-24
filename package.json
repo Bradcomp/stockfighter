@@ -1,0 +1,16 @@
+{
+  "name": "stockfighter",
+  "version": "1.0.0",
+  "description": "Client for the stockfighter api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Bradcomp",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.8.0",
+    "ramda": "^0.18.0",
+    "ws": "^0.8.1"
+  }
+}
