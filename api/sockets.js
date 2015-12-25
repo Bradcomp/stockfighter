@@ -6,7 +6,7 @@ const {prop, compose, curry} = require('ramda');
 const connect = (path, onMessage) => {
     let ws = new WebSocket(path);
     ws.on('open', ws =>  console.log(`opened Socket to ${path}`));
-    ws.on('message', onMessage);
+    ws.on('message', compose(onMessage, JSON.parse.bind(JSON)));
     return ws;
 };
 
